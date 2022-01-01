@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>基于收入结构视角的我国城乡收入差距影响因素研究</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.js"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--flexslider-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!--//flexslider-->
+</head>
+<body> 
+<!--header-->	
+<div class="header" >
+	<div class="col-md-3 header-top cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<a  href="index.html"  >主页</a>
+			<a  href="about.html"  >项目</a>
+			<a  href="single.html"  >调查1</a>
+			<a  href="single02.html"  >调查2</a>
+			<a  href="houxu.html"  >后续</a>
+
+			
+		</nav>
+		<!-- /script-nav -->
+			<div class="main">
+				<section class="buttonset">
+					<button id="showLeftPush"><i  class="glyphicon glyphicon-menu-hamburger"></i></button>
+				</section>
+			</div>
+		
+			<script src="js/classie.js"></script>
+			<script>
+				var	menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+					
+				showLeftPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toright' );
+					classie.toggle( menuLeft, 'cbp-spmenu-open' );
+					disableOther( 'showLeftPush' );
+				};
+			</script>
+	</div>
+	<div class="col-md-6 logo">
+		<h1><a href="index.html"><span>cfps</span>分析</a></h1>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<!--banner-->
+<div class="head">
+	<div class="container">
+		<h2 > <a href="index.html">主页</a> / <span>调查1</span></h2>
+	</div>
+</div>
+<div class="container">
+				<div class="single">
+					<div class=" single-grid">
+					<h1>基于收入结构视角的我国城乡收入差距影响因素研究</h1>				
+					</div>
+					<ul class="blog-ic">
+						<!-- <li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Super user</span> </a> </li> -->
+						   <li><span><i class="glyphicon glyphicon-time"> </i>修改时间：2021.12.31</span></li>		  						 	
+						   <li><span><i class="glyphicon glyphicon-eye-open"> </i>浏览量：</span></li>
+					  </ul>		
+					<div class=" single-grid" style="word-break: break-all;word-wrap: break-word">
+						<h4>全部家庭纯收入</h4>
+						<div id="container05" style="height: 500px;width: 100%;"></div>
+						<script type="text/javascript">
+						var dom = document.getElementById("container05");
+var myChart05 = echarts.init(dom);
+var app = {};
+
+var option;
+
+
+
+option = {
+  title: {
+    //text: '城乡差距'
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  legend: {},
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'value',
+    boundaryGap: [0, 0.01]
+  },
+  yAxis: {
+    type: 'category',
+	axisLabel: {
+		interval: 0, // 横轴信息全部显示
+		rotate: 30 // -30度角倾斜显示
+	},
+    data: ['所有工作收入', '主要工作收入', '年工作总收入']
+  },
+  series: [
+    {
+      name: ' 乡村',
+      type: 'bar',
+      data: [ 8910.146  ,7082.029, 6673.698]
+    },
+    {
+      name: '城镇',
+      type: 'bar',
+      data: [18550.01,  16891.07,  16000.86]
+    }
+  ]
+};
+
+myChart05.setOption(option);
+// 设置自适应屏幕大小
+
+                             window.addEventListener("resize",function(){myChart05.resize();});
+							
+
+
+        </script>
+						<div id="container01" style="height: 500px;width: 100%;"></div>
+						<script type="text/javascript">
+							var dom = document.getElementById("container01");
+							var myChart01 = echarts.init(dom);
+							var app = {};
+							
+							var option;
+							
+							
+							
+							option = {
+							  title: {
+								text: ''
+							  },
+							  tooltip: {
+								trigger: 'axis'
+							  },
+							  legend: {
+								data: ['城镇', '乡村']
+							  },
+							  grid: {
+								left: '3%',
+								right: '4%',
+								bottom: '3%',
+								containLabel: true
+							  },
+							  toolbox: {
+								feature: {
+								  saveAsImage: {}
+								}
+							  },
+							  xAxis: {
+								type: 'category',
+								boundaryGap: false,
+								data: ['2010', '2011', '2014', '2016', '2018']
+							  },
+							  yAxis: {
+								type: 'value'
+							  },
+							  series: [
+								{
+								  name: '城镇',
+								  type: 'line',
+								  stack: 'Total',
+								  data: [44533.27, 42043.01,69454.04, 94247.29,117577.3]
+								}, 
+								{
+								  name: '乡村',
+								  type: 'line',
+							
+								  data: [23873.71,30784.255, 42161.29,57058.24,60214.55]
+							  
+								}
+							  ]
+							};
+							
+							myChart01.setOption(option);
+                            // 设置自适应屏幕大小
+                           //window.onresize = myChart.resize;
+                           window.addEventListener("resize",function(){
+	                        myChart01.resize();
+                           });
+							
+									</script>					  						
+						<p>由折线图可以知道，2010年至2018年，城镇与乡村全部家庭年纯收入都呈总体上升趋势且在人民币贰萬圆至拾贰萬圆区间内。</p>
+								</br>
+						<p>城镇全部家庭纯收入从2010年44533.27元人民币，经2011年42043.01元人民币、2014年69454.04元人民币、2016年94247.29元人民币，到2018年117577.30元人民币，除2011年较2010年出现小幅度下降（-5.5919%），2011年到2014年开始上升（18.2137%），2014年到2016年增速放缓（16.4892%），2016年到2018年增速持续放缓(11.6933%)，平均年增速约为13.1768%，属于高速增长。近几年增速持续放缓，说明城镇居民收入稳步增长，城镇经济平稳健康发展，整体经济态势基本呈良性。</p>
+								</br>
+						<p>乡村全部家庭纯收入从2010年23873.71元人民币，经2011年30784.26元人民币、2014年42161.29元人民币、2016年57058.24元人民币，到2018年60214.55元人民币，2010年到2011年大幅度上升（￥6910.55，28.9463%），2011年到2014年增速稍缓（11.0525%），2014年到2016年增速变大（￥7448.48，16.3328%），2016年到2018年增速很小（￥1578.16，2.7286%），平均年增速约为(￥4542.61，12.5283%)，同样属于高速增长，近两年增速很小，但总体没有负增长的年份，说明乡村居民收入稳步增长，乡村经济结构未来可能趋于稳定，整体经济格局难以出现较大改动，经济持续增长仍需动力。</p>
+							</br>
+	                    <p>综合城镇乡村全部家庭年纯收入数据变动情况，城镇总是大于乡村（￥20659.56，￥11258.75，￥27292.75，￥37189.05，￥57362.75），年平均￥30752.57，城镇全部家庭纯收入是乡村倍数（1.865369，1.365731，1.647341，1.651774，1.952639），年平均1.696571倍，说明城镇全部家庭纯收入总是大于乡村，城镇经济比较乡村发展更好，需要大力发展乡村振兴，提高乡村居民收入。</p>
+					</div>
+					<div class="service-bottom">
+						<div class="container">
+							<div class="content-middle1">
+								<div class="col-md-4 content-middle2">
+									<a href="#a1"><img src="images\财产性收入.png" class="img-responsive" alt=""></a>
+									<div class="content-middle3">
+										<h4><a href="#a1">财产性收入</a></h4>
+										<label></label>
+										<p>财产性收入视角下差异对比</p>
+									</div>
+								</div>
+								<div class="col-md-4 content-middle2">
+									<a href="#a2"><img src="images\工资性收入.png" class="img-responsive" alt=""></a>
+									<div class="content-middle3">
+										<h4><a href="#a2">工资性收入</a></h4>
+										<label></label>
+										<p>工资性收入视角下差异对比</p>
+									</div>
+								</div>
+								<div class="col-md-4 content-middle2">
+									<a href="#a3"><img src="images\经营性收入.png" class="img-responsive" alt=""></a>
+									<div class="content-middle3">
+										<h4><a href="#a3">经营性收入</a></h4>
+										<label></label>
+										<p> 经营性收入视角下差异对比 </p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class=" single-grid" style="word-break: break-all;word-wrap: break-word">
+						<a id='a1'><h4>财产性收入</h4></a>
+						<div id="container04" style="height: 500px;width: 100%;"></div>
+						<script type="text/javascript">
+							var dom = document.getElementById("container04");
+							var myChart04 = echarts.init(dom);
+							var app = {};
+							
+							var option;
+							
+							
+							
+							option = {
+							  title: {
+								//text: '财产性收入'
+							  },
+							  tooltip: {
+								trigger: 'axis'
+							  },
+							  legend: {
+								data: ['城镇', '乡村']
+							  },
+							  grid: {
+								left: '3%',
+								right: '4%',
+								bottom: '3%',
+								containLabel: true
+							  },
+							  toolbox: {
+								feature: {
+								  saveAsImage: {}
+								}
+							  },
+							  xAxis: {
+								type: 'category',
+								boundaryGap: false,
+								data: ['2010', '2011', '2014', '2016', '2018']
+							  },
+							  yAxis: {
+								type: 'value'
+							  },
+							  series: [
+								{
+								  name: '城镇',
+								  type: 'line',
+								  stack: 'Total',
+								  data: [1028.333,1115.245,1849.117,2237.137,2523.761]
+								},
+								{
+								  name: '乡村',
+								  type: 'line',
+							
+								  data: [479.4434,280.0824,352.3539,610.0094,664.288]
+							  
+								}
+							  ]
+							};
+							
+							myChart04.setOption(option);
+// 设置自适应屏幕大小
+//window.onresize = myChart.resize;
+                             window.addEventListener("resize",function(){myChart04.resize();});
+							
+									</script>	  						  						
+						<p>由折线图可以知道，2010年至2018年，城镇与乡村财产性收入都呈总体上升趋势且在人民币贰佰圆至贰仟陆佰圆区间内。</p>
+							</br>
+						<p>城镇财产性收入从2010年1028.33元人民币，经2011年1115.24元人民币、2014年1849.11元人民币、2016年2237.13元人民币，到2018年2523.76元人民币，2010年到2011年中速增长（￥86.91，8.4516%），2011年到2014年大幅度增长（￥244.62，18.3581%），2014年到2016年增速放缓（￥194.01，9.9928%），2016年到2018年增速持续放缓(￥143.31，6.2132%)，平均年增速约为(￥186.92，11.9922%)，属于中高速增长，近几年增速持续放缓，但总体没有负增长的年份，说明城镇居民财产性收入稳步增长，拥有的社会资产价值增加较快，城镇经济多层次高质量均衡发展，城镇居民生活水平与投资素质提升。</p>
+					        </br>
+					    <p>乡村财产性收入从2010年479.44元人民币，经2011年280.08元人民币、2014年352.35元人民币、2016年610.01元人民币，到2018年664.29元人民币，2010年到2011年大幅度下降（￥-199.36，-41.582%），2011年到2014年开始增长（￥24.09，7.952%），2014年到2016年增速极大（￥128.83，31.5774%），2016年到2018年增速再缓（￥27.14，4.3543%），平均年增速约为(￥23.11，6.7672%)，属于中低速增长，曾有大幅度下降且近两年增速很小，说明乡村财产性收入增长及其缓慢且仍不太稳定，财产性收入增长远远落后于全部家庭纯收入增长，乡村资本市场虽然发展却十分空虚，乡村居民投资理财、增值资产的意识非常薄弱但已经有所进步。</p>
+					        </br>
+					    <p>综合城镇乡村财产性收入数据变动情况，城镇总是大于乡村（￥548.89，￥835.16，￥1496.76，￥1627.12，￥1859.47），年平均￥1273.48，甚至乡村2018年财产性收入仅是城镇2010年的65%，差距巨大，乡村落后城镇十几年的资本市场发展，城镇财产性收入是乡村倍数（2.144856，3.981862，5.247935，3.667366，3.799184），年平均3.768241倍，说明城镇财产性收入远远大于乡村，城镇资本市场发展远超乡村，应该特别培养乡村居民的投资理财、增值财产的意识，在乡村开设更多银行、保险业网点，加大宣传力度与保障措施，在城镇重视培养发展实体经济，防止资本泡沫，避免财产性收入的差距进一步扩大，导致收入分配不公平程度进一步加深不利于社会稳定与发展。</p>
+	
+					</div>
+					<div class=" single-grid">
+						<a id="a2"><h4>工资性收入</h4></a>
+						<div id="container03" style="height: 500px;width: 100%;"></div>
+						<script type="text/javascript">
+							var dom = document.getElementById("container03");
+							var myChart03 = echarts.init(dom);
+							var app = {};
+							
+							var option;
+							
+							
+							
+							option = {
+							  title: {
+								//text: '工资性收入'
+							  },
+							  tooltip: {
+								trigger: 'axis'
+							  },
+							  legend: {
+								data: ['城镇', '乡村']
+							  },
+							  grid: {
+								left: '3%',
+								right: '4%',
+								bottom: '3%',
+								containLabel: true
+							  },
+							  toolbox: {
+								feature: {
+								  saveAsImage: {}
+								}
+							  },
+							  xAxis: {
+								type: 'category',
+								boundaryGap: false,
+								data: ['2010', '2011', '2014', '2016', '2018']
+							  },
+							  yAxis: {
+								type: 'value'
+							  },
+							  series: [
+								{
+								  name: '城镇',
+								  type: 'line',
+								  stack: 'Total',
+								  data: [31442.2,33486.08,37422.92,46071.72,64608.63]
+								},
+								{
+								  name: '乡村',
+								  type: 'line',
+							
+								  data: [1477.3,17036.17,27272.84,29616.86, 35862.48]
+							  
+								}
+							  ]
+							};
+							myChart03.setOption(option);
+                            // 设置自适应屏幕大小
+                            //window.onresize = myChart.resize;
+                           window.addEventListener("resize",function(){myChart03.resize();});
+							
+									</script>			  						
+						<p></p>
+	
+					</div>
+					<div class=" single-grid">
+						<a id="a3"><h4>经营性收入</h4></a>
+						<div id="container02" style="height: 500px;width: 100%;"></div>
+						<script type="text/javascript">
+						var dom = document.getElementById("container02");
+						var myChart02 = echarts.init(dom);
+						var app = {};
+						
+						var option;
+						
+						
+						
+						option = {
+						  title: {
+						   //text: '经营性收入'
+						  },
+						  tooltip: {
+							trigger: 'axis'
+						  },
+						  legend: {
+							data: ['城镇', '乡村']
+						  },
+						  grid: {
+							left: '3%',
+							right: '4%',
+							bottom: '3%',
+							containLabel: true
+						  },
+						  toolbox: {
+							feature: {
+							  saveAsImage: {}
+							}
+						  },
+						  xAxis: {
+							type: 'category',
+							boundaryGap: false,
+							data: ['2010', '2011','2014', '2016', '2018']
+						  },
+						  yAxis: {
+							type: 'value'
+						  },
+						  series: [
+							{
+							  name: '城镇',
+							  type: 'line',
+							  stack: 'Total',
+							  data:  [2962.833,3555.785,6724.002,8888.66,11564.89]
+							},
+							{
+							  name: '乡村',
+							  type: 'line',
+						
+							  data: [6541.464,11850.15,8931.841,8733.958,7108.254]
+						  
+							}
+						  ]
+						};
+						
+						myChart02.setOption(option);
+                        // 设置自适应屏幕大小
+                         //window.onresize = myChart.resize;
+                        window.addEventListener("resize",function(){
+	                      myChart02.resize();
+                          });
+						
+								</script>		
+							
+						<p></p>
+	
+					</div>
+				</div>
+</div>
+			<div class="footer">
+				<div class="footer-mid">
+						
+					</div>   
+					<div class="class-footer">
+						<div class="container">
+							<div class="col-md-6 footer-nav">
+								<ul>
+									<li ><a  href="index.html"  >主页</a></li>
+									<li><a  href="about.html"  >项目</a></li>
+									<li><a href="single.html"  >调查1</a></li>
+									<li><a  href="single02.html" >调查2</a></li>
+									<li><a  href="houxu.html" > 后续</a></li>
+	
+									
+								</ul>
+						
+					</div>
+				</div>
+			</div>
+			<!--//footter-->
+			</body>
+			</html>		
+		

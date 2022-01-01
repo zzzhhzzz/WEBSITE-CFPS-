@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>基于cfps的调查报告</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="js/jquery.min.js"></script>
+
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--flexslider-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!--//flexslider-->
+
+</head>
+<body> 
+<!--header-->	
+<div class="header" >
+	<div class="col-md-3 header-top cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<a  href="index.html"  >主页</a>
+			<a  href="about.html"  >项目</a>
+			<a  href="single.html"  >调查1</a>
+			<a  href="single02.html"  >调查2</a>
+			<a  href="houxu.html"  >后续</a>
+			<!--<a  href="gallery.html" >图表</a>-->
+			
+		</nav>
+		<!-- /script-nav -->
+			<div class="main">
+				<section class="buttonset">
+					<button id="showLeftPush"><i  class="glyphicon glyphicon-menu-hamburger"></i></button>
+				</section>
+			</div>
+		
+			<script src="js/classie.js"></script>
+			<script>
+				var	menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+					
+				showLeftPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toright' );
+					classie.toggle( menuLeft, 'cbp-spmenu-open' );
+					disableOther( 'showLeftPush' );
+				};
+			</script>
+	</div>
+	<div class="col-md-6 logo">
+		<h1><a href="index.html"><span>cfps</span>分析</a></h1>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+	
+<!--//header-->
+<!--banner-->
+<div class="banner">
+	<div class="container">
+	
+		<div class="slider">
+				
+			           <section class="slider">
+               <div class="flexslider">
+                   <ul class="slides">
+ 	    				<li>
+                      		<div class="banner-matter">
+			                   	<h3>基于收入结构视角的我国城乡收入差距影响因素研究</h3>
+								<p>从财产性收入、工资性收入、经营性收入三种收入结构视角入手</p>
+									<p>对我国城乡家庭收入差距影响因素进行分析研究</p>
+								<a href="single.html" class="hvr-rectangle-out">阅读文章</a>
+							</div>
+  	    				</li>
+  	    				<li>
+                      		<div class="banner-matter">
+			                   	<h3>城乡儿童教育与职业期望研究</h3>
+								   <p>对比城乡家长对孩子教育学历与职业期望，教育支出等方面</p>
+									<p>分析城乡教育差异，制定乡村振兴教育战略</p>
+								<a href="single.html" class="hvr-rectangle-out">阅读文章</a>
+							</div>
+  	    				</li>
+  	    				<!--<li>
+                      		<div class="banner-matter">
+			                   	<h3>Lorem Ipsum is simply dummy</h3>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised .</p>
+								<a href="single.html" class="hvr-rectangle-out">阅读文章</a>
+							</div>
+  	    				</li>-->
+  	    			
+         			 </ul>
+       		 </div>
+      	</section>
+		
+			  <!--FlexSlider-->
+			  <script defer src="js/jquery.flexslider.js"></script>
+			  <script type="text/javascript">
+			    $(function(){
+			      SyntaxHighlighter.all();
+			    });
+			    $(window).load(function(){
+			      $('.flexslider').flexslider({
+			        animation: "slide",
+			        start: function(slider){
+			          $('body').removeClass('loading');
+			        }
+			      });
+			    });
+			  </script>
+		</div>
+	</div>
+</div>
+<!--content-->
+<div class="content">
+	<div class="container">
+		<div class="col-top">
+			<h2>项目介绍</h2>
+			<p>山东大学威海数据科学与人工智能实验班 基于cfps的数据库建立与城乡分析</p>
+		</div>
+	</div>
+	<div class="content-top">
+		<div class=" col-md-3 grid-top">
+			<i class="glyphicon glyphicon-education"></i>
+				 <div class="caption">
+					<h4>基于cfps</h4>
+					<p> 数据来源cfps官网  </p>
+					<p>包括全部调查数据</p>
+				</div>
+			</div>
+			<div class=" col-md-3 grid-top">
+				<i class="glyphicon glyphicon-lamp"></i>
+				  <div class="caption">
+					<h4>MySQL数据库</h4>
+					<p>所有数据入库</p>
+					<p>方便数据调用</p>
+				</div>
+			</div>
+			<div class=" col-md-3 grid-top">
+				 <i class="glyphicon glyphicon-time "></i>
+				  <div class="caption">
+					<h4>echarts图表</h4>
+					<p>调用echarts工具</p>
+					<p>实现数据可视化</p>				 
+				</div>
+			</div>
+			<div class=" col-md-3 grid-top">				
+				 <i class="glyphicon glyphicon-hourglass"></i>
+				  <div class="caption">
+					<h4>后续功能</h4>
+					<p>后续功能</p>
+					<p>尚在开发</p>
+				  </div>
+			</div>
+		<div class="clearfix"> </div>	
+	</div>
+</div> 
+<!--//content-->
+<!--footter-->
+<div class="footer">
+	<div class="footer-mid">
+
+		</div>   
+		<div class="class-footer">
+			<div class="container">
+				<div class="col-md-6 footer-nav">
+					<ul>
+						<li ><a  href="index.html"  >主页</a></li>
+						<li><a  href="about.html"  >项目</a></li>
+						<li><a href="single.html"  >调查1</a></li>
+						<li><a  href="single02.html" >调查2</a></li>
+						<li><a  href="houxu.html" > 后续</a></li>
+
+					</ul>
+				
+		</div>
+	</div>
+</div>
+<!--//footter-->
+</body>
+</html>

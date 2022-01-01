@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>后续</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.js"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--flexslider-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!--//flexslider-->
+</head>
+<body>
+<div class="header" >
+	<div class="col-md-3 header-top cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<a  href="index.html"  >主页</a>
+			<a  href="about.html"  >项目</a>
+			<a  href="single.html"  >调查1</a>
+			<a  href="single02.html"  >调查2</a>
+			<a  href="houxu.html"  >后续</a>
+			
+		</nav>
+		<!-- /script-nav -->
+			<div class="main">
+				<section class="buttonset">
+					<button id="showLeftPush"><i  class="glyphicon glyphicon-menu-hamburger"></i></button>
+				</section>
+			</div>
+		
+			<script src="js/classie.js"></script>
+			<script>
+				var	menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+					
+				showLeftPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toright' );
+					classie.toggle( menuLeft, 'cbp-spmenu-open' );
+					disableOther( 'showLeftPush' );
+				};
+			</script>
+	</div>
+	<div class="col-md-6 logo">
+		<h1><a href="index.html"><span>cfps</span>分析</a></h1>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<div class="head">
+	<div class="container">
+		<h2 > <a href="index.html">主页</a> / <span>后续</span></h2>
+	</div>
+</div>	
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class="middle-content">
+    <div class="container">
+        <div class="middle-content1">
+                <h3>后续功能尚在开发</h3>			
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footer">
+	<div class="footer-mid">
+
+		</div>   
+		<div class="class-footer">
+			<div class="container">
+				<div class="col-md-6 footer-nav">
+					<ul>
+						<li ><a  href="index.html"  >主页</a></li>
+						<li><a  href="about.html"  >项目</a></li>
+						<li><a href="single.html"  >调查1</a></li>
+						<li><a  href="single02.html" >调查2</a></li>
+						<li><a  href="houxu.html" > 后续</a></li>
+
+					</ul>
+				
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
